@@ -1,0 +1,12 @@
+#/bin/bash!
+#include <stdio.h>
+#include <pwd.h>
+#include <sys/types.h>
+#include <unistd.h>
+  int main()
+  {
+  struct passwd *pwd;
+  pwd =getpwuid(geteuid());
+printf ("USER: %S\n", pww->pw_name);
+  return 0;
+  }
